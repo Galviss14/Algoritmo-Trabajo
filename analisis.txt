@@ -1,0 +1,26 @@
+Proyecto Tienda Virtual (Urban Store)
+
+Planteamiento del problema
+El sistema debe simular una tienda virtual llamada Urban Store, donde un cliente puede registrarse, visualizar productos disponibles, realizar compras, gestionar su carrito y efectuar el pago.
+Identificación De Clases 
+  Producto Representa los artículos de la tienda (gorras, relojes, gafas, vape).
+-	Atributos: tipo, modelo, precio, stock.
+-	Responsabilidades: mostrar información, vender unidades, devolver precio.
+ Cliente Representa al comprador que interactúa con el sistema.
+-	Atributos: nombre, cédula, teléfono, dirección.
+-	Responsabilidades: identificarse como usuario del sistema.
+ Carrito Representa el carrito de compras asociado a un cliente.
+-	Atributos: lista de productos, total acumulado, cliente.
+-	Responsabilidades: agregar productos, eliminar productos, mostrar contenido, calcular total, simular pago.
+
+
+Relación entre Identidades 
+
+El sistema se organiza en tres partes: Cliente, Carrito y Producto.
+-	Cada cliente tiene un solo Carrito asociado a sus datos.
+-	El Carrito guarda varios producto, permitiendo agregarlos, quitarlos y verlos.
+-	Los producto se administran desde el carrito, que controla cantidades, subtotales y actualiza el inventario.
+Responsabilidades principales
+-	Producto: manejar inventario, mostrar precio y características, actualizar existencias al vender.
+-	Cliente: representar al comprador, dar datos para registro y factura, ser dueño del carrito.
+-	Carrito: permitir compras y eliminaciones, calcular el total, mostrar el contenido y simular el pago con factura.
